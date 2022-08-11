@@ -28,3 +28,27 @@ function buildTable(data) {
 
     });
 };
+
+function handleClick() {
+    //tells D3 to look for  #datetime id in the HTML tags and to select the first value that matches the tag.
+    let date = d3.select("#datetime").property("value");
+
+    //default filter is entire table
+    let filteredData = tableData;
+
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
+
+    // Rebuild the table using the filtered data
+    // @NOTE: If no date was entered, then filteredData will
+    // just be the original tableData.
+    buildTable(filteredData);
+};
+  
+
+// listens for click
+d3.selectAll("#filter-btn").on("click", handleClick);
+    
+//Builds the table when the page loads
+buildTable(tableData);
