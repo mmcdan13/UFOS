@@ -8,13 +8,13 @@ Based on a Javascript file filled with UFO sighting information, I am using Java
 
 The result of this project is a dynamic webpage (pictured below). 
 
-![](/static/images/UFO_webpage.jpg)
+![](/static/images/UFO_webpage.png)
 
-![](/static/images/state_filter_UFO.jpg)
+![](/static/images/state_filter_UFO.png)
 
-![](/static/images/shape_filter_UFO.jpg)
+![](/static/images/shape_filter_UFO.png)
 
-![](/static/images/city_filter_UFO.jpg)
+![](/static/images/city_filter_UFO.png)
 
 
 ## Summary 
